@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Videos — Visual Computing Lab</title>
+<meta name="description" content="Simulation videos, demos, and talks from the Visual Computing Lab." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main>
+
+  <header class="page-header">
+    <div class="wrap">
+      <p class="eyebrow">Videos</p>
+      <h1>See it in motion</h1>
+      <p class="lede">
+        Simulation results, demos, and talks. We publish on YouTube as
+        <a href="https://www.youtube.com/@VCAMULab" target="_blank" rel="noopener">@VCAMULab</a>.
+      </p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap">
+      <!--
+        To embed a real video here, replace VIDEO_ID below with a YouTube video ID
+        and uncomment the .video-embed block. The featured-card is the no-embed fallback.
+      -->
+      <a class="featured-card" href="https://www.youtube.com/@VCAMULab" target="_blank" rel="noopener">
+        <div class="featured-thumb" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="56" height="56">
+            <circle cx="32" cy="32" r="30" fill="rgba(255,255,255,.92)"/>
+            <path d="M26 22 L26 42 L44 32 Z" fill="#1f4d3a"/>
+          </svg>
+        </div>
+        <div class="featured-body">
+          <p class="featured-eyebrow">YouTube · @VCAMULab</p>
+          <h3>Watch our latest simulations</h3>
+          <p>Tree growth, wildfire dynamics, and more — published as we ship them.</p>
+          <span class="featured-link">Open the channel ↗</span>
+        </div>
+      </a>
+
+      <!--
+      <div class="video-embed">
+        <iframe
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          title="Visual Computing Lab — featured video"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+      -->
+
+      <h2 class="subheading center-heading">What's on the channel</h2>
+      <div class="grid topic-grid">
+        <article class="topic">
+          <div class="topic-icon">🌳</div>
+          <h3>Plant simulation</h3>
+          <p>Tree growth, root systems, biomechanics, and forest dynamics.</p>
+        </article>
+        <article class="topic">
+          <div class="topic-icon">🔥</div>
+          <h3>Fire &amp; combustion</h3>
+          <p>Wildfire propagation, structural fire, flame reconstruction.</p>
+        </article>
+        <article class="topic">
+          <div class="topic-icon">🌪️</div>
+          <h3>Weather phenomena</h3>
+          <p>Hurricanes, tornadoes, and large-scale environmental physics.</p>
+        </article>
+        <article class="topic">
+          <div class="topic-icon">🎤</div>
+          <h3>Talks &amp; demos</h3>
+          <p>Conference talks and short technical walkthroughs.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
