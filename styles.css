@@ -336,6 +336,7 @@ p { margin: 0 0 .9em; }
   text-transform: uppercase;
   letter-spacing: .14em;
   font-weight: 600;
+  text-align: center;
   margin: 0 0 32px;
 }
 .people-grid + .subheading { margin-top: 72px; }
