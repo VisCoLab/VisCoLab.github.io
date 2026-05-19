@@ -25,7 +25,7 @@ function renderHeader() {
   return `
 <header class="site-header">
   <div class="wrap nav">
-    <a class="brand" href="index.html" aria-label="Visual Computing Lab — home">
+    <a class="brand" href="index.html" aria-label="VisCo — Visual Computing Lab — home">
       <span class="brand-mark" aria-hidden="true">
         <svg viewBox="0 0 32 32" width="28" height="28">
           <circle cx="16" cy="16" r="15" fill="none" stroke="currentColor" stroke-width="1.5"/>
@@ -33,8 +33,8 @@ function renderHeader() {
         </svg>
       </span>
       <span class="brand-text">
-        <strong>Visual Computing Lab</strong>
-        <em>Adam Mickiewicz University</em>
+        <strong>VisCo</strong>
+        <em>Visual Computing Lab</em>
       </span>
     </a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
@@ -50,7 +50,7 @@ function renderFooter() {
   return `
 <footer class="site-footer">
   <div class="wrap footer-inner">
-    <p>© ${year} Visual Computing Lab · Adam Mickiewicz University in Poznań</p>
+    <p>© ${year} VisCo · Visual Computing Lab · Adam Mickiewicz University in Poznań</p>
     <p class="footer-links">
       <a href="https://wp.faculty.wmi.amu.edu.pl/" target="_blank" rel="noopener">Lab head</a>
       <a href="https://www.youtube.com/@VCAMULab" target="_blank" rel="noopener">YouTube</a>
