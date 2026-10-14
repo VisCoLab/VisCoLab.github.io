@@ -1,55 +1,53 @@
 ---
 ---
 {%- assign featured = site.data.publications | where: "featured", true -%}
-<section class="intro">
-  <div class="wrap intro-grid">
-    <div class="intro-text">
-      <h1>VisCo — Visual Computing Lab</h1>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <h1>Visual Computing Lab</h1>
       <p class="lede">
-        We are the Visual Computing Lab at the
+        We simulate the natural world and teach machines to see it. Our work
+        spans physically based simulation, generative models, synthetic data,
+        and computer vision — from the architecture of trees to the dynamics of
+        wildfires and storms.
+      </p>
+      <p class="hero-meta">
+        Led by <a href="https://wp.faculty.wmi.amu.edu.pl/">Wojtek Palubicki</a> at the
         <a href="{{ site.university.faculty_url }}">{{ site.university.faculty }}</a>,
-        {{ site.university.name }}. Our work spans physically based simulation,
-        generative models, synthetic data, and computer vision — from the
-        architecture of trees to the dynamics of wildfires and storms.
+        {{ site.university.name }}, with collaborators in Saudi Arabia, Germany,
+        and the United States.
       </p>
-      <p>
-        Led by <a href="https://wp.faculty.wmi.amu.edu.pl/">Wojtek Palubicki</a>,
-        we work alongside collaborators in Saudi Arabia, Germany, the United
-        States, and beyond.
-      </p>
-      <p class="intro-links">
-        <a href="{{ '/research.html' | relative_url }}">Research themes</a>
-        <a href="{{ '/publications.html' | relative_url }}">All publications</a>
-        <a href="{{ '/contact.html' | relative_url }}#openings">Openings</a>
-      </p>
+      <nav class="hero-themes" aria-label="Research themes">
+        <span class="label">Research</span>
+        {%- for t in site.data.themes %}
+        <a href="{{ '/research.html' | relative_url }}#{{ t.id }}">{{ t.title }}</a>
+        {%- endfor %}
+      </nav>
     </div>
-    <div class="mosaic">
-      {%- for p in featured limit: 4 -%}
-      {%- assign link = p.links.project | default: p.links.paper | default: p.links.arxiv -%}
-      <a class="tile" href="{{ link }}">
-        <img src="{{ p.image | relative_url }}" alt="{{ p.title }}" width="560" height="315">
-        <span class="tile-caption">{{ p.title | split: ":" | first }} <span>{{ p.venue }}</span></span>
-      </a>
-      {%- endfor -%}
-    </div>
+    <aside class="hero-news" aria-labelledby="news-title">
+      <h2 id="news-title">News</h2>
+      {% include news.html limit=4 %}
+    </aside>
   </div>
 </section>
 
 <section class="section">
-  <div class="wrap home-grid">
-    <div>
-      <h2 class="section-title">News</h2>
-      {% include news.html limit=6 %}
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Selected work</h2>
+      <a href="{{ '/publications.html' | relative_url }}">All publications</a>
     </div>
-    <div>
-      <h2 class="section-title">Recent publications
-        <a class="section-more" href="{{ '/publications.html' | relative_url }}">All publications</a>
-      </h2>
-      <div class="pubs pubs--compact">
-        {%- for p in site.data.publications limit: 5 -%}
-          {% include publication.html pub=p %}
-        {%- endfor -%}
-      </div>
+    <div class="cards">
+      {%- for p in featured limit: 6 -%}
+      {%- assign link = p.links.project | default: p.links.paper | default: p.links.arxiv -%}
+      {%- assign parts = p.title | split: ": " -%}
+      <a class="card" href="{{ link }}">
+        <img src="{{ p.image | relative_url }}" alt="" loading="lazy" width="352" height="198">
+        <span class="card-title">{{ parts[0] }}</span>
+        {%- if parts.size > 1 %}<span class="card-sub">{{ parts[1] }}</span>{% endif %}
+        <span class="card-venue">{{ p.venue }}</span>
+      </a>
+      {%- endfor -%}
     </div>
   </div>
 </section>

@@ -1,15 +1,13 @@
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <p>
-      <strong>{{ site.title }}</strong><br>
-      <a href="{{ site.university.faculty_url }}">{{ site.university.faculty }}</a>,
-      <a href="{{ site.university.url }}">{{ site.university.name }}</a><br>
-      ul. Uniwersytetu Poznańskiego 4, 61-614 Poznań, Poland
+      © {{ site.time | date: "%Y" }} {{ site.title }} ·
+      <a href="{{ site.university.faculty_url }}">{{ site.university.faculty }}</a> ·
+      <a href="{{ site.university.url }}">{{ site.university.name }}</a>
     </p>
     <p class="footer-links">
-      <a href="{{ '/contact.html' | relative_url }}">Contact &amp; openings</a>
       <a href="{{ site.youtube }}">YouTube</a>
-      <span>© {{ site.time | date: "%Y" }} VisCo</span>
+      <a href="{{ '/contact.html' | relative_url }}">Contact</a>
     </p>
   </div>
 </footer>

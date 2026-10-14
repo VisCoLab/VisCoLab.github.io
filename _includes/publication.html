@@ -24,8 +24,8 @@ Lab members (people.yml `name` and `aliases`) are set in bold automatically.
     </p>
     <p class="pub-venue">
       <span class="venue">{{ pub.venue }}</span>
-      {%- if pub.venue_full %} {{ pub.venue_full }}{% endif -%}
-      {%- if pub.status %} <span class="status">{{ pub.status }}</span>{% endif -%}
+      {%- if pub.venue_full %} · {{ pub.venue_full }}{% endif -%}
+      {%- if pub.status %} · <em>{{ pub.status }}</em>{% endif -%}
     </p>
     {%- if pub.highlight %}<p class="pub-highlight">{% if pub.highlight_url %}<a href="{{ pub.highlight_url }}">{{ pub.highlight }}</a>{% else %}{{ pub.highlight }}{% endif %}</p>{% endif %}
     {%- if pub.links %}

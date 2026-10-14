@@ -1,5 +1,5 @@
 # Lab publications, newest first. publications.html groups them by `year`;
-# the home page shows the first five and, as images, the `featured` ones.
+# the home page shows the `featured` ones (up to six) as image cards.
 # Metadata verified against Crossref / the publisher on 2026-10-14.
 #
 # Per paper:
@@ -13,7 +13,7 @@
 #   year        publication year
 #   image       16:9 teaser in images/projects/, at least 800 px wide (optional)
 #   highlight   optional one-line award or highlight; highlight_url links it
-#   featured    true to show the image on the home page
+#   featured    true to show it as a card on the home page (six at most)
 #   themes      research.html themes: vision, synthetic, natural, formal
 #   links       any of project, paper (DOI), arxiv, code, data, video
 
@@ -65,6 +65,7 @@
   venue: ECCV 2026
   year: 2026
   image: /images/projects/gaussians_on_fire.jpg
+  featured: true
   themes: [vision, natural]
   links:
     project: https://jna-358.github.io/gaussians_on_fire/
@@ -119,6 +120,7 @@
   venue_full: ACM Transactions on Graphics
   year: 2025
   image: /images/projects/firex.jpg
+  featured: true
   themes: [natural, formal]
   links:
     project: https://helgewrede.github.io/firex/
