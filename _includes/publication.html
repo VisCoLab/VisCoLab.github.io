@@ -10,7 +10,7 @@ Lab members (people.yml `name` and `aliases`) are set in bold automatically.
     {%- if pub.image -%}
       <img src="{{ pub.image | relative_url }}" alt="" loading="lazy" width="320" height="180">
     {%- else -%}
-      <span class="pub-thumb-empty">VISCO</span>
+      <span class="pub-thumb-empty">{% include mark.svg %}</span>
     {%- endif -%}
   {%- if primary %}</a>{% else %}</span>{% endif %}
   <div class="pub-body">
