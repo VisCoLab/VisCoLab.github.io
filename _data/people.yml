@@ -27,7 +27,7 @@ members:
 
   # The old site listed these three under "PhD", separate from "PhD Students".
   - { name: Andrzej Kokosza, group: postdoc, photo: kokosza.jpg }
-  - { name: Jacek Kałużny, group: postdoc, photo: kaluzny.jpg }
+  - { name: Jacek Kałużny, group: postdoc, photo: kaluzny.jpg, url: https://www.duszekjk.com/ }
   - { name: Wojciech Kowalewski, group: postdoc }
 
   - name: Patryk Bartkowiak
