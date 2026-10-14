@@ -1,17 +1,18 @@
 # Lab publications, newest first. publications.html groups them by `year`;
 # the home page shows the first five and, as images, the `featured` ones.
+# Metadata verified against Crossref / the publisher on 2026-10-14.
 #
 # Per paper:
 #   id          short slug, also the anchor (publications.html#<id>)
 #   title       official title
-#   authors     official author list, in order; lab members are bolded
-#               automatically (see _data/people.yml)
+#   authors     official author list, in the publisher's order; lab members are
+#               bolded automatically (see _data/people.yml)
 #   venue       short label, e.g. "SIGGRAPH 2026", "ECCV 2026", "NeurIPS 2026"
 #   venue_full  optional: journal or track, e.g. "ACM Transactions on Graphics"
 #   status      optional: "to appear" until the paper is out
 #   year        publication year
 #   image       16:9 teaser in images/projects/, at least 800 px wide (optional)
-#   highlight   optional one-line award or highlight
+#   highlight   optional one-line award or highlight; highlight_url links it
 #   featured    true to show the image on the home page
 #   themes      research.html themes: vision, synthetic, natural, formal
 #   links       any of project, paper (DOI), arxiv, code, data, video
@@ -27,6 +28,7 @@
   themes: [natural, formal]
   links:
     project: https://jango6324.github.io/woodstock/
+    paper: https://doi.org/10.1145/3811376
 
 - id: greenscapes
   title: "GreenScapes: Optimized Vegetation Configurations in Cities"
@@ -41,6 +43,7 @@
   links:
     project: https://greenscapes-project.github.io/
     code: https://github.com/greenscapes-project/greenscapes
+    video: https://www.youtube.com/watch?v=93ximIbff4M
 
 - id: masc
   title: "MaSC: A Masked Similarity Metric for Evaluating Concept-Driven Generation"
@@ -65,6 +68,11 @@
   themes: [vision, natural]
   links:
     project: https://jna-358.github.io/gaussians_on_fire/
+    paper: https://doi.org/10.1007/978-3-032-37152-2_25
+    arxiv: https://arxiv.org/abs/2511.22459
+    code: https://github.com/jna-358/gaussians_on_fire
+    data: https://huggingface.co/datasets/jna-358/fire_actioncam
+    video: https://youtu.be/wXeomgdm5xI
 
 - id: syngallery
   title: "SynGallery: A Synthetic Gallery of Real Paintings for Instance-Level Artwork Recognition"
@@ -79,28 +87,30 @@
     project: https://syngallery.github.io/
     arxiv: https://arxiv.org/abs/2607.18907
     code: https://github.com/SynGallery/syngallery-bench
+    data: https://huggingface.co/datasets/patryk-bartkowiak/SynGallery
 
 - id: hand-radiographs
   title: "Resource-efficient Fine-tuning of Stable Diffusion for Synthetic Hand Radiograph Generation"
-  authors: [Moritz J. Finck, Sönke P. Lücke, Niklas C. Koser, Yipeng Sun, Jan B. Hövener, Sören Pirk, Wojtek Palubicki]
+  authors: [Marten J. Finck, Sina P. Lücke, Niklas C. Koser, Yu Sun, Jan-B. Hövener, Wojtek Palubicki, Sören Pirk]
   venue: BVM 2026
   venue_full: Bildverarbeitung für die Medizin
   year: 2026
   themes: [synthetic]
   links:
-    paper: https://link.springer.com/chapter/10.1007/978-3-658-51100-5_80
+    paper: https://doi.org/10.1007/978-3-658-51100-5_80
 
 - id: vascular-strands
-  title: "Self-organization of Vascular Strands Drives their Patterning in the Arabidopsis Shoot Apex"
-  authors: [Agata Burian, Andrzej Kokosza, Magdalena Raczyńska-Szajgin, Pavel Solansky, Marja Timmermans, Wojtek Palubicki]
+  title: "Self-organization of vascular strands drives their patterning in the Arabidopsis shoot apex"
+  authors: [Agata Burian, Andrzej Kokosza, Magdalena Raczyńska-Szajgin, Pavel Solansky, Marja C. P. Timmermans, Wojtek Palubicki]
   venue: Developmental Cell
   year: 2025
   image: /images/projects/vascular.jpg
-  highlight: Research highlight in Nature Plants
+  highlight: Featured in a Nature Plants research highlight
+  highlight_url: https://doi.org/10.1038/s41477-025-02175-7
   themes: [natural, formal]
   links:
     project: https://wp.faculty.wmi.amu.edu.pl/VascularStrands.html
-    paper: https://www.sciencedirect.com/science/article/abs/pii/S153458072500663X
+    paper: https://doi.org/10.1016/j.devcel.2025.10.012
 
 - id: firex
   title: "Fire-X: Extinguishing Fire with Stoichiometric Heat Release"
@@ -112,17 +122,21 @@
   themes: [natural, formal]
   links:
     project: https://helgewrede.github.io/firex/
+    paper: https://doi.org/10.1145/3763338
+    video: https://www.youtube.com/watch?v=56Mh4yCKoSI
 
 - id: stressful
   title: "Stressful Tree Modeling: Breaking Branches with Strands"
   authors: [Bosheng Li, Nikolas A. Schwarz, Wojtek Palubicki, Sören Pirk, Dominik L. Michels, Bedrich Benes]
   venue: SIGGRAPH 2025
+  venue_full: Conference Papers
   year: 2025
   image: /images/projects/stressful.jpg
   themes: [natural, formal]
   links:
     project: https://storage.googleapis.com/pirk.io/projects/stressful/index.html
-    paper: https://dl.acm.org/doi/10.1145/3721238.3730745
+    paper: https://doi.org/10.1145/3721238.3730745
+    video: https://www.youtube.com/watch?v=2RVvSO3avic
 
 - id: flameforge
   title: "FLAMEFORGE: Combustion Simulation of Wooden Structures"
@@ -132,26 +146,31 @@
   year: 2025
   themes: [natural, formal]
   links:
-    paper: https://dl.acm.org/doi/10.1145/3747855
+    paper: https://doi.org/10.1145/3747855
+    arxiv: https://arxiv.org/abs/2412.16735
+    video: https://www.youtube.com/watch?v=lcURgolpPCs
 
 - id: thunderstruck
   title: "Thunderstruck: Visually Simulating Electrical Storms"
-  authors: [Jorge A. Amador Herrera, Jonathan Klein, Daniel T. Banuti, Sören Pirk, Wojtek Palubicki, Dominik L. Michels]
-  venue: IEEE TVCG
+  authors: [Jorge A. Amador Herrera, Jonathan Klein, Daniel T. Banuti, Wojtek Palubicki, Sören Pirk, Dominik L. Michels]
+  venue: IEEE TVCG 2025
   venue_full: IEEE Transactions on Visualization and Computer Graphics
   year: 2025
   themes: [natural]
   links:
-    paper: https://ieeexplore.ieee.org/document/11118310
+    paper: https://doi.org/10.1109/TVCG.2025.3596334
+    video: https://www.youtube.com/watch?v=EVVG63xdIAM
 
 - id: neural-surface-priors
   title: "Neural Surface Priors for Editable Gaussian Splatting"
-  authors: [Jakub Szymkowiak, Weronika Jakubowska, Dawid Malarz, Weronika Smolak-Dyżewska, Maciej Zięba, Przemysław Musialski, Wojtek Palubicki, Przemysław Spurek]
+  authors: [Jakub Szymkowiak, Weronika Jakubowska, Dawid Malarz, Weronika Smolak-Dyżewska, Maciej Zięba, Wojtek Palubicki, Przemyslaw Musialski, Przemysław Spurek]
   venue: IJCNN 2025
   year: 2025
   themes: [vision]
   links:
+    paper: https://doi.org/10.1109/IJCNN64981.2025.11229121
     arxiv: https://arxiv.org/abs/2411.18311
+    code: https://github.com/WJakubowska/NeuralSurfacePriors
 
 - id: scintilla
   title: "Scintilla: Simulating Combustible Vegetation for Wildfires"
@@ -164,6 +183,8 @@
   themes: [natural]
   links:
     project: https://wp.faculty.wmi.amu.edu.pl/Scintilla.html
+    paper: https://doi.org/10.1145/3658192
+    video: https://www.youtube.com/watch?v=GbOHRwHdP_s
 
 - id: invigoration
   title: "Interactive Invigoration: Volumetric Modeling of Trees with Strands"
@@ -175,6 +196,8 @@
   themes: [natural, formal]
   links:
     project: https://storage.googleapis.com/pirk.io/projects/invigoration/index.html
+    paper: https://doi.org/10.1145/3658206
+    video: https://www.youtube.com/watch?v=YaP5xTHqFB4
 
 - id: rhizomorph
   title: "Rhizomorph: The Coordinated Function of Shoots and Roots"
@@ -186,3 +209,5 @@
   themes: [natural, formal]
   links:
     project: https://wp.faculty.wmi.amu.edu.pl/papers/Rhizomorph.html
+    paper: https://doi.org/10.1145/3592145
+    video: https://www.youtube.com/watch?v=y_FHWGMPMww

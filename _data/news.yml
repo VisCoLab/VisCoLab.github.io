@@ -14,7 +14,14 @@
 - date: 2026-08-05
   text: "[SynGallery](publications.html#syngallery) accepted to the VISART VIII workshop at ECCV 2026."
 
-# To add once dated:
-# - Woodstock at SIGGRAPH 2026 (ACM TOG)
-# - Vascular strands in Developmental Cell, with a Nature Plants research highlight
-# - Hand radiograph generation at BVM 2026
+- date: 2026-07-03
+  text: "[Woodstock](publications.html#woodstock) published in ACM Transactions on Graphics (SIGGRAPH 2026)."
+
+- date: 2026-03-12
+  text: "[Synthetic hand radiograph generation](publications.html#hand-radiographs) at BVM 2026 in Lübeck."
+
+- date: 2025-12-04
+  text: "[Fire-X](publications.html#firex) published in ACM Transactions on Graphics (SIGGRAPH Asia 2025)."
+
+- date: 2025-11-27
+  text: "Our [Developmental Cell paper on vascular strands](publications.html#vascular-strands) is featured in a Nature Plants research highlight."
