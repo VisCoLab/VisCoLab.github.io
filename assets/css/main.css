@@ -1,4 +1,4 @@
-/* VISCO — Visual Computing Lab.
+/* VISCO, the Visual Computing Lab.
    Inter for text, Syncopate for the wordmark only, AMU navy as the one brand colour. */
 
 :root {
@@ -102,12 +102,11 @@ ul { margin: 0; padding: 0; }
 .card-sub { font-size: 0.9375rem; color: var(--ink-2); line-height: 1.45; margin-top: 2px; }
 .card-venue { font-size: 0.8125rem; color: var(--ink-3); margin-top: 6px; }
 
-.supporters { border-top: 1px solid var(--line); padding-top: 40px; }
-.supporters .label { margin-bottom: 20px; }
-.supporter-logos { display: flex; flex-wrap: wrap; align-items: center; gap: 24px 56px; margin-bottom: 20px; }
-.supporter-logos img { width: auto; max-width: 100%; }
+.supporters { border-top: 1px solid var(--line); padding-top: 40px; text-align: center; }
+.supporters .label { margin-bottom: 28px; }
+.supporter-logos { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 32px 80px; }
+.supporter-logos img { height: var(--h); width: auto; max-width: 100%; object-fit: contain; }
 .supporter-logos a:hover { opacity: 0.8; }
-.supporters p { margin: 0; max-width: 46rem; font-size: 0.875rem; color: var(--ink-3); }
 
 /* ---------- news ---------- */
 .news { list-style: none; }
@@ -196,6 +195,8 @@ ul { margin: 0; padding: 0; }
   h1 { font-size: 1.75rem; }
   .cards { grid-template-columns: 1fr; }
   .pub { grid-template-columns: 112px minmax(0, 1fr); gap: 16px; }
+  .supporter-logos { gap: 24px 48px; }
+  .supporter-logos img { height: calc(var(--h) * 0.7); }
   .people { grid-template-columns: repeat(auto-fill, minmax(128px, 1fr)); gap: 24px 16px; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
 }

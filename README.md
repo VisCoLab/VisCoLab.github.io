@@ -1,6 +1,6 @@
 # viscolab.github.io
 
-Website of VISCO — the Visual Computing Lab at the Faculty of Mathematics and
+Website of VISCO, the Visual Computing Lab at the Faculty of Mathematics and
 Computer Science, Adam Mickiewicz University in Poznań: <https://viscolab.github.io>.
 
 GitHub Pages builds the site with Jekyll on every push to `main`; there is no
@@ -22,7 +22,7 @@ icon) or locally; every page renders from them, so formatting stays consistent.
 **Add a paper.** Copy an existing entry in `_data/publications.yml` and fill in
 `title`, `authors` (official list, in order), `venue` (short, e.g.
 `SIGGRAPH 2026`), `year`, and `links` (`project`, `paper`, `arxiv`, `code`,
-`data`, `video` — leave out the ones that do not exist). Add a 16:9 teaser image
+`data`, `video`; leave out the ones that do not exist). Add a 16:9 teaser image
 to `images/projects/` (at least 800 px wide) and point `image` at it. Lab members
 are bolded automatically, using the names and `aliases` in `_data/people.yml`.
 
@@ -50,8 +50,8 @@ and `erb` are needed on Ruby 3.4.
 _config.yml        site name, university, navigation
 _data/             all content (see above)
 _includes/         publication.html, person.html, news.html, header, footer
-_layouts/          default.html — the one page layout
-assets/css/        main.css — the one stylesheet
+_layouts/          default.html, the one page layout
+assets/css/        main.css, the one stylesheet
 images/projects/   16:9 teasers
 images/people/     square portraits
 ```

@@ -1,4 +1,4 @@
-{%- comment -%} Usage: {% include news.html limit=6 %} — newest first, from _data/news.yml {%- endcomment -%}
+{%- comment -%} Usage: {% include news.html limit=6 %}: newest first, from _data/news.yml {%- endcomment -%}
 {%- assign items = site.data.news | sort: "date" | reverse -%}
 <ul class="news">
   {%- for n in items limit: include.limit -%}

@@ -5,20 +5,20 @@
   title: Computer Vision
   image: /images/projects/gaussians_on_fire.jpg
   summary: >-
-    We work at the intersection of geometry, perception, and learning —
+    We work at the intersection of geometry, perception, and learning,
     designing models that reconstruct the world from images and generate it
     back out. Architectures we build respect the structure of their inputs,
     with spatial priors drawn from simulation.
   topics:
     - Reconstruction from sparse observations, including Gaussian-splat flames and plant geometry from images
-    - Generative models — diffusion and transformers — conditioned on simulated or structured priors
+    - Generative models (diffusion and transformers) conditioned on simulated or structured priors
 
 - id: synthetic
   title: Synthetic Data
   image: /images/projects/syngallery.jpg
   summary: >-
     We use our simulators as data engines. The lab studies how synthetic
-    imagery can be made useful — and trustworthy — for downstream systems,
+    imagery can be made useful and trustworthy for downstream systems,
     with a focus on closing the synthetic-to-real gap in domains where
     collecting real data is expensive or unsafe.
   topics:
@@ -32,11 +32,11 @@
   image: /images/projects/scintilla.jpg
   summary: >-
     The lab's most visible thread. We design simulators for the structure and
-    behavior of the natural world — both as scientific tools and as
+    behavior of the natural world, both as scientific tools and as
     production-quality content. Our work spans biology of plants, large-scale
     environmental physics, and the dynamics of failure and damage.
   topics:
-    - Tree architecture, root–shoot coordination, and stress-induced breaking
+    - Tree architecture, the coordination of roots and shoots, and stress-induced breaking
     - Wildfire propagation, combustion in wooden structures, flame reconstruction
     - Hurricane and tornado generation, weather and climate dynamics
     - Forest- and ecosystem-scale modeling
@@ -47,7 +47,7 @@
   summary: >-
     The methodological backbone connecting the rest. We are interested in
     mathematical structures for complex systems and in writing simulators we
-    can later learn against — bridging classical procedural modeling and
+    can later learn against, bridging classical procedural modeling and
     modern differentiable methods.
   topics:
     - L-systems and procedural geometry for biology and architecture

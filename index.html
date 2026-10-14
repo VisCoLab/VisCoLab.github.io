@@ -25,8 +25,8 @@
       {{ site.university.name }}, led by
       <a href="https://wp.faculty.wmi.amu.edu.pl/">Wojtek Palubicki</a>. Our work
       spans physically based simulation, generative models, synthetic data, and
-      computer vision — from the architecture of trees to the dynamics of
-      wildfires and storms. We work alongside collaborators in Saudi Arabia,
+      computer vision, applied to everything from the architecture of trees to
+      the dynamics of wildfires and storms. We work alongside collaborators in Saudi Arabia,
       Germany, and the United States.
     </p>
     <p class="more-links">
@@ -71,10 +71,9 @@
       <h2 class="label">Supported by</h2>
       <div class="supporter-logos">
         {%- for s in site.data.supporters.logos %}
-        <a href="{{ s.url }}"><img src="{{ s.logo | relative_url }}" alt="{{ s.name }}" style="height: {{ s.height }}px" loading="lazy"></a>
+        <a href="{{ s.url }}"><img src="{{ s.logo | relative_url }}" alt="{{ s.name }}" style="--h: {{ s.height }}px" loading="lazy"></a>
         {%- endfor %}
       </div>
-      <p>{{ site.data.supporters.statement }}</p>
     </div>
   </div>
 </section>

@@ -6,7 +6,7 @@
 #            publication's author list
 #   aliases  other spellings used in author lists (optional)
 #   group    one of the group ids below
-#   photo    file in images/people/ — square, at least 400 x 400 px (optional;
+#   photo    file in images/people/: square, at least 400 x 400 px (optional;
 #            without one a neutral silhouette is shown)
 #   url      personal or university page (optional)
 #   note     one short line under the name (optional)

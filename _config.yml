@@ -1,8 +1,8 @@
-# VISCO — Visual Computing Lab. Built by GitHub Pages' own Jekyll (3.10): a push
+# VISCO, the Visual Computing Lab. Built by GitHub Pages' own Jekyll (3.10): a push
 # to `main` rebuilds the site, no Actions needed. Content lives in `_data/`;
 # see README.md for how to add a person, a paper, or a news item.
 
-title: VISCO — Visual Computing Lab
+title: VISCO · Visual Computing Lab
 short_title: VISCO
 lab_name: Visual Computing Lab
 tagline: Adam Mickiewicz University in Poznań   # jekyll-seo-tag: home page <title> suffix

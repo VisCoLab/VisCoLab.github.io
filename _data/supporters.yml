@@ -1,19 +1,13 @@
 # Supporters, shown at the bottom of the home page. Logos go in
 # images/supporters/ (transparent PNG or SVG); `height` is the display height
-# in px, tuned so the logos look the same size.
-
-statement: >-
-  Our research is supported by the European Union through the EOSC-ARENA
-  project (AI Research Enhancement through Networked Agents), Grant Agreement
-  No. 101292597, and by computational resources from Poznańskie Centrum
-  Superkomputerowo-Sieciowe (PCSS).
+# in px, tuned so the logos carry the same visual weight.
 
 logos:
   - name: EOSC-ARENA
     url: https://arena.ai4eosc.eu/
     logo: /images/supporters/eosc-arena.png
-    height: 34
+    height: 56
   - name: Poznańskie Centrum Superkomputerowo-Sieciowe (PCSS)
     url: https://www.pcss.pl/
     logo: /images/supporters/pcss.png
-    height: 42
+    height: 66
