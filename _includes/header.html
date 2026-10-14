@@ -1,0 +1,21 @@
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }}, home">
+      {% include logo.svg %}
+      <span class="brand-text">
+        <span class="brand-name">{{ site.short_title }}</span>
+        <span class="brand-sub">{{ site.lab_name }} · {{ site.university.name | split: " in " | first }}</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      {% for item in site.nav %}
+        {% assign current = false %}
+        {% if page.url == item.url %}{% assign current = true %}{% endif %}
+        <a href="{{ item.url | relative_url }}"{% if current %} aria-current="page"{% endif %}>{{ item.title }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,188 @@
+# Lab publications, newest first. publications.html groups them by `year`;
+# the home page shows the first five and, as images, the `featured` ones.
+#
+# Per paper:
+#   id          short slug, also the anchor (publications.html#<id>)
+#   title       official title
+#   authors     official author list, in order; lab members are bolded
+#               automatically (see _data/people.yml)
+#   venue       short label, e.g. "SIGGRAPH 2026", "ECCV 2026", "NeurIPS 2026"
+#   venue_full  optional: journal or track, e.g. "ACM Transactions on Graphics"
+#   status      optional: "to appear" until the paper is out
+#   year        publication year
+#   image       16:9 teaser in images/projects/, at least 800 px wide (optional)
+#   highlight   optional one-line award or highlight
+#   featured    true to show the image on the home page
+#   themes      research.html themes: vision, synthetic, natural, formal
+#   links       any of project, paper (DOI), arxiv, code, data, video
+
+- id: woodstock
+  title: "Woodstock: Interactive Modeling of Fungal Wood Decay"
+  authors: [Zhanyu Yang, Nikolas A. Schwarz, Bosheng Li, Dominik L. Michels, Bedrich Benes, Sören Pirk, Wojtek Palubicki]
+  venue: SIGGRAPH 2026
+  venue_full: ACM Transactions on Graphics
+  year: 2026
+  image: /images/projects/woodstock.jpg
+  featured: true
+  themes: [natural, formal]
+  links:
+    project: https://jango6324.github.io/woodstock/
+
+- id: greenscapes
+  title: "GreenScapes: Optimized Vegetation Configurations in Cities"
+  authors: [Patryk Bartkowiak, Marcin Marlewski, Paweł Wójcik, Jae Joong Lee, Dominik L. Michels, Bedrich Benes, Sören Pirk, Wojtek Palubicki]
+  venue: SIGGRAPH Asia 2026
+  venue_full: Conference Papers
+  status: to appear
+  year: 2026
+  image: /images/projects/greenscapes.jpg
+  featured: true
+  themes: [natural]
+  links:
+    project: https://greenscapes-project.github.io/
+    code: https://github.com/greenscapes-project/greenscapes
+
+- id: masc
+  title: "MaSC: A Masked Similarity Metric for Evaluating Concept-Driven Generation"
+  authors: [Patryk Bartkowiak, Lennart Petersen, Bartosz Kotrys, Dominik L. Michels, Sören Pirk, Wojtek Palubicki]
+  venue: NeurIPS 2026
+  venue_full: Evaluations & Datasets Track
+  status: to appear
+  year: 2026
+  image: /images/projects/masc.jpg
+  themes: [vision]
+  links:
+    project: https://masc-metric.github.io/
+    arxiv: https://arxiv.org/abs/2605.22469
+    code: https://github.com/masc-metric/masc
+
+- id: gaussians-on-fire
+  title: "Gaussians on Fire: High-Frequency Reconstruction of Flames"
+  authors: [Jakob Nazarenus, Dominik L. Michels, Wojtek Palubicki, Simin Kou, Fang-Lue Zhang, Sören Pirk, Reinhard Koch]
+  venue: ECCV 2026
+  year: 2026
+  image: /images/projects/gaussians_on_fire.jpg
+  themes: [vision, natural]
+  links:
+    project: https://jna-358.github.io/gaussians_on_fire/
+
+- id: syngallery
+  title: "SynGallery: A Synthetic Gallery of Real Paintings for Instance-Level Artwork Recognition"
+  authors: [Patryk Bartkowiak, Jakub Markil, Bartosz Kotrys, Dominik L. Michels, Sören Pirk, Wojtek Palubicki]
+  venue: ECCV 2026 Workshops
+  venue_full: VISART VIII
+  year: 2026
+  image: /images/projects/syngallery.jpg
+  featured: true
+  themes: [synthetic, vision]
+  links:
+    project: https://syngallery.github.io/
+    arxiv: https://arxiv.org/abs/2607.18907
+    code: https://github.com/SynGallery/syngallery-bench
+
+- id: hand-radiographs
+  title: "Resource-efficient Fine-tuning of Stable Diffusion for Synthetic Hand Radiograph Generation"
+  authors: [Moritz J. Finck, Sönke P. Lücke, Niklas C. Koser, Yipeng Sun, Jan B. Hövener, Sören Pirk, Wojtek Palubicki]
+  venue: BVM 2026
+  venue_full: Bildverarbeitung für die Medizin
+  year: 2026
+  themes: [synthetic]
+  links:
+    paper: https://link.springer.com/chapter/10.1007/978-3-658-51100-5_80
+
+- id: vascular-strands
+  title: "Self-organization of Vascular Strands Drives their Patterning in the Arabidopsis Shoot Apex"
+  authors: [Agata Burian, Andrzej Kokosza, Magdalena Raczyńska-Szajgin, Pavel Solansky, Marja Timmermans, Wojtek Palubicki]
+  venue: Developmental Cell
+  year: 2025
+  image: /images/projects/vascular.jpg
+  highlight: Research highlight in Nature Plants
+  themes: [natural, formal]
+  links:
+    project: https://wp.faculty.wmi.amu.edu.pl/VascularStrands.html
+    paper: https://www.sciencedirect.com/science/article/abs/pii/S153458072500663X
+
+- id: firex
+  title: "Fire-X: Extinguishing Fire with Stoichiometric Heat Release"
+  authors: [Helge Wrede, Anton R. Wagner, Sarker Miraz Mahfuz, Wojtek Palubicki, Dominik L. Michels, Sören Pirk]
+  venue: SIGGRAPH Asia 2025
+  venue_full: ACM Transactions on Graphics
+  year: 2025
+  image: /images/projects/firex.jpg
+  themes: [natural, formal]
+  links:
+    project: https://helgewrede.github.io/firex/
+
+- id: stressful
+  title: "Stressful Tree Modeling: Breaking Branches with Strands"
+  authors: [Bosheng Li, Nikolas A. Schwarz, Wojtek Palubicki, Sören Pirk, Dominik L. Michels, Bedrich Benes]
+  venue: SIGGRAPH 2025
+  year: 2025
+  image: /images/projects/stressful.jpg
+  themes: [natural, formal]
+  links:
+    project: https://storage.googleapis.com/pirk.io/projects/stressful/index.html
+    paper: https://dl.acm.org/doi/10.1145/3721238.3730745
+
+- id: flameforge
+  title: "FLAMEFORGE: Combustion Simulation of Wooden Structures"
+  authors: [Daoming Liu, Jonathan Klein, Florian Rist, Wojtek Palubicki, Sören Pirk, Dominik L. Michels]
+  venue: SCA 2025
+  venue_full: Proceedings of the ACM on Computer Graphics and Interactive Techniques
+  year: 2025
+  themes: [natural, formal]
+  links:
+    paper: https://dl.acm.org/doi/10.1145/3747855
+
+- id: thunderstruck
+  title: "Thunderstruck: Visually Simulating Electrical Storms"
+  authors: [Jorge A. Amador Herrera, Jonathan Klein, Daniel T. Banuti, Sören Pirk, Wojtek Palubicki, Dominik L. Michels]
+  venue: IEEE TVCG
+  venue_full: IEEE Transactions on Visualization and Computer Graphics
+  year: 2025
+  themes: [natural]
+  links:
+    paper: https://ieeexplore.ieee.org/document/11118310
+
+- id: neural-surface-priors
+  title: "Neural Surface Priors for Editable Gaussian Splatting"
+  authors: [Jakub Szymkowiak, Weronika Jakubowska, Dawid Malarz, Weronika Smolak-Dyżewska, Maciej Zięba, Przemysław Musialski, Wojtek Palubicki, Przemysław Spurek]
+  venue: IJCNN 2025
+  year: 2025
+  themes: [vision]
+  links:
+    arxiv: https://arxiv.org/abs/2411.18311
+
+- id: scintilla
+  title: "Scintilla: Simulating Combustible Vegetation for Wildfires"
+  authors: [Andrzej Kokosza, Helge Wrede, Daniel Gonzalez Esparza, Milosz Makowski, Daoming Liu, Dominik L. Michels, Sören Pirk, Wojtek Palubicki]
+  venue: SIGGRAPH 2024
+  venue_full: ACM Transactions on Graphics
+  year: 2024
+  image: /images/projects/scintilla.jpg
+  featured: true
+  themes: [natural]
+  links:
+    project: https://wp.faculty.wmi.amu.edu.pl/Scintilla.html
+
+- id: invigoration
+  title: "Interactive Invigoration: Volumetric Modeling of Trees with Strands"
+  authors: [Bosheng Li, Nikolas A. Schwarz, Wojtek Palubicki, Sören Pirk, Bedrich Benes]
+  venue: SIGGRAPH 2024
+  venue_full: ACM Transactions on Graphics
+  year: 2024
+  image: /images/projects/invigoration.jpg
+  themes: [natural, formal]
+  links:
+    project: https://storage.googleapis.com/pirk.io/projects/invigoration/index.html
+
+- id: rhizomorph
+  title: "Rhizomorph: The Coordinated Function of Shoots and Roots"
+  authors: [Bosheng Li, Jonathan Klein, Dominik L. Michels, Bedrich Benes, Sören Pirk, Wojtek Palubicki]
+  venue: SIGGRAPH 2023
+  venue_full: ACM Transactions on Graphics
+  year: 2023
+  image: /images/projects/rhizomorph.jpg
+  themes: [natural, formal]
+  links:
+    project: https://wp.faculty.wmi.amu.edu.pl/papers/Rhizomorph.html

@@ -1,0 +1,56 @@
+# Lab members. people.html renders the groups in this order; within a group,
+# members appear in the order listed here.
+#
+# Per member:
+#   name     shown on the People page; also bolded wherever it appears in a
+#            publication's author list
+#   aliases  other spellings used in author lists (optional)
+#   group    one of the group ids below
+#   photo    file in images/people/ — square, at least 400 x 400 px (optional;
+#            without one a neutral silhouette is shown)
+#   url      personal or university page (optional)
+#   note     one short line under the name (optional)
+
+groups:
+  - { id: head, title: Lab Head }
+  - { id: postdoc, title: Postdoctoral Researchers }
+  - { id: phd, title: PhD Students }
+  - { id: msc, title: MSc Students }
+  - { id: assistant, title: Research Assistants }
+  - { id: alumni, title: Alumni }
+
+members:
+  - name: Wojtek Palubicki
+    aliases: [Wojtek Pałubicki, Wojciech Pałubicki, Wojciech Palubicki]
+    group: head
+    photo: palubicki.jpg
+    url: https://wp.faculty.wmi.amu.edu.pl/
+
+  # The old site listed these three under "PhD", separate from "PhD Students".
+  - { name: Andrzej Kokosza, group: postdoc }
+  - { name: Jacek Kałużny, group: postdoc }
+  - { name: Wojciech Kowalewski, group: postdoc }
+
+  - name: Patryk Bartkowiak
+    group: phd
+    photo: bartkowiak.jpg
+    url: https://patrykbart.faculty.wmi.amu.edu.pl/
+  - { name: Mateusz Ogrodowczyk, group: phd }
+  - { name: Jakub Szymkowiak, group: phd }
+
+  - { name: Marcin Marlewski, group: msc }
+  - { name: Berenika Kostka de Sztemberg, group: msc }
+  - { name: Jakub Markil, group: msc }
+  - { name: Kristina Bujanowska, group: msc }
+  - { name: Mateusz Szlachetka, group: msc }
+
+  # The old site listed these three as "Researchers", after the MSc students.
+  - { name: Aleksandra Krasicka, group: assistant }
+  - { name: Karol Cyganik, group: assistant }
+  - { name: Mateusz Draga, group: assistant }
+
+# Frequent co-authors outside the lab, listed under the member grid.
+collaborators:
+  - { name: Dominik L. Michels, affiliation: KAUST }
+  - { name: Sören Pirk, affiliation: Kiel University }
+  - { name: Bedrich Benes, affiliation: Purdue University }

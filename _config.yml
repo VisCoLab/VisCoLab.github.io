@@ -1,0 +1,43 @@
+# VisCo — Visual Computing Lab. Built by GitHub Pages' own Jekyll (3.10): a push
+# to `main` rebuilds the site, no Actions needed. Content lives in `_data/`;
+# see README.md for how to add a person, a paper, or a news item.
+
+title: VisCo — Visual Computing Lab
+short_title: VisCo
+lab_name: Visual Computing Lab
+tagline: Adam Mickiewicz University in Poznań   # jekyll-seo-tag: home page <title> suffix
+description: >-
+  VisCo, the Visual Computing Lab at the Faculty of Mathematics and Computer
+  Science, Adam Mickiewicz University in Poznań. Physically based simulation,
+  generative models, synthetic data, and computer vision.
+url: https://viscolab.github.io
+baseurl: ""
+lang: en
+
+university:
+  name: Adam Mickiewicz University in Poznań
+  faculty: Faculty of Mathematics and Computer Science
+  url: https://amu.edu.pl/en
+  faculty_url: https://wmi.amu.edu.pl/en
+
+youtube: https://www.youtube.com/@VCAMULab
+
+nav:
+  - { title: Research, url: /research.html }
+  - { title: Publications, url: /publications.html }
+  - { title: People, url: /people.html }
+  - { title: Contact, url: /contact.html }
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: default }
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

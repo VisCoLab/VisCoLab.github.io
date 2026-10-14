@@ -1,0 +1,20 @@
+# News, any order (sorted by date when shown). `text` is Markdown; link the
+# paper with publications.html#<id> or its project page. The home page shows
+# the six most recent.
+
+- date: 2026-09-24
+  text: "[MaSC](publications.html#masc) accepted to NeurIPS 2026 (Evaluations & Datasets Track)."
+
+- date: 2026-09-08
+  text: "Two papers at ECCV 2026 in Malmö: [Gaussians on Fire](publications.html#gaussians-on-fire) in the main conference and [SynGallery](publications.html#syngallery) at the VISART VIII workshop."
+
+- date: 2026-08-19
+  text: "[GreenScapes](publications.html#greenscapes) accepted to SIGGRAPH Asia 2026."
+
+- date: 2026-08-05
+  text: "[SynGallery](publications.html#syngallery) accepted to the VISART VIII workshop at ECCV 2026."
+
+# To add once dated:
+# - Woodstock at SIGGRAPH 2026 (ACM TOG)
+# - Vascular strands in Developmental Cell, with a Nature Plants research highlight
+# - Hand radiograph generation at BVM 2026

@@ -1,0 +1,42 @@
+{%- comment -%}
+One publication entry. Usage: {% include publication.html pub=p %}
+Lab members (people.yml `name` and `aliases`) are set in bold automatically.
+{%- endcomment -%}
+{%- assign pub = include.pub -%}
+{%- capture member_names -%}{%- for m in site.data.people.members -%}|{{ m.name }}|{%- for a in m.aliases -%}|{{ a }}|{%- endfor -%}{%- endfor -%}{%- endcapture -%}
+{%- assign primary = pub.links.project | default: pub.links.paper | default: pub.links.arxiv -%}
+<article class="pub" id="{{ pub.id }}">
+  {%- if primary %}<a class="pub-thumb" href="{{ primary }}" tabindex="-1" aria-hidden="true">{% else %}<span class="pub-thumb">{% endif -%}
+    {%- if pub.image -%}
+      <img src="{{ pub.image | relative_url }}" alt="" loading="lazy" width="320" height="180">
+    {%- else -%}
+      <span class="pub-thumb-empty">{% include logo.svg %}</span>
+    {%- endif -%}
+  {%- if primary %}</a>{% else %}</span>{% endif %}
+  <div class="pub-body">
+    <h3 class="pub-title">{% if primary %}<a href="{{ primary }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h3>
+    <p class="pub-authors">
+      {%- for a in pub.authors -%}
+        {%- capture needle -%}|{{ a }}|{%- endcapture -%}
+        {%- if member_names contains needle -%}<strong>{{ a }}</strong>{%- else -%}{{ a }}{%- endif -%}
+        {%- unless forloop.last -%}, {% endunless -%}
+      {%- endfor -%}
+    </p>
+    <p class="pub-venue">
+      <span class="venue">{{ pub.venue }}</span>
+      {%- if pub.venue_full %} {{ pub.venue_full }}{% endif -%}
+      {%- if pub.status %} <span class="status">{{ pub.status }}</span>{% endif -%}
+    </p>
+    {%- if pub.highlight %}<p class="pub-highlight">{{ pub.highlight }}</p>{% endif %}
+    {%- if pub.links %}
+    <p class="pub-links">
+      {%- if pub.links.project %}<a href="{{ pub.links.project }}">Project page</a>{% endif -%}
+      {%- if pub.links.paper %}<a href="{{ pub.links.paper }}">Paper</a>{% endif -%}
+      {%- if pub.links.arxiv %}<a href="{{ pub.links.arxiv }}">arXiv</a>{% endif -%}
+      {%- if pub.links.code %}<a href="{{ pub.links.code }}">Code</a>{% endif -%}
+      {%- if pub.links.data %}<a href="{{ pub.links.data }}">Data</a>{% endif -%}
+      {%- if pub.links.video %}<a href="{{ pub.links.video }}">Video</a>{% endif -%}
+    </p>
+    {%- endif %}
+  </div>
+</article>

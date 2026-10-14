@@ -1,161 +1,29 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>People — VisCo · Visual Computing Lab</title>
-<meta name="description" content="Members of VisCo — the Visual Computing Lab at Adam Mickiewicz University." />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+---
+title: People
+heading: People
+lede: Researchers and students working at the intersection of graphics, simulation, and machine learning.
+---
+<section class="section">
+  <div class="wrap">
+    {%- for g in site.data.people.groups -%}
+      {%- assign members = site.data.people.members | where: "group", g.id -%}
+      {%- if members.size > 0 %}
+    <h2 class="group-title">{{ g.title }}</h2>
+    <ul class="people">
+      {%- for m in members -%}
+        {% include person.html person=m %}
+      {%- endfor -%}
+    </ul>
+      {%- endif -%}
+    {%- endfor %}
 
-<div id="site-header"></div>
-
-<main>
-
-  <header class="page-header">
-    <div class="wrap">
-      <p class="eyebrow">People</p>
-      <h1>The lab</h1>
-      <p class="lede">
-        A small group of researchers and students working at the intersection
-        of graphics, simulation, and machine learning.
-      </p>
-    </div>
-  </header>
-
-  <section class="section">
-    <div class="wrap">
-
-      <!-- HEAD -->
-      <h3 class="subheading">Lab Head</h3>
-      <div class="grid people-grid">
-        <article class="person">
-          <div class="avatar has-photo">
-            <img src="images/palubicki.jpg" alt="Wojtek Palubicki" loading="lazy" />
-          </div>
-          <div class="person-body">
-            <h4><a href="https://wp.faculty.wmi.amu.edu.pl/" target="_blank" rel="noopener">Wojtek Palubicki</a></h4>
-          </div>
-        </article>
-      </div>
-
-      <!-- PHDs -->
-      <h3 class="subheading">PhD</h3>
-      <div class="grid people-grid">
-        <article class="person">
-          <div class="avatar">AK</div>
-          <div class="person-body">
-            <h4>Andrzej Kokosza</h4>
-          </div>
-        </article>
-        <article class="person">
-          <div class="avatar">JK</div>
-          <div class="person-body">
-            <h4>Jacek Kałużny</h4>
-          </div>
-        </article>
-        <article class="person">
-          <div class="avatar">WK</div>
-          <div class="person-body">
-            <h4>Wojciech Kowalewski</h4>
-          </div>
-        </article>
-      </div>
-
-      <!-- PHD STUDENTS -->
-      <h3 class="subheading">PhD Students</h3>
-      <div class="grid people-grid">
-        <article class="person">
-          <div class="avatar has-photo">
-            <img src="images/bartkowiak.jpg" alt="Patryk Bartkowiak" loading="lazy" />
-          </div>
-          <div class="person-body">
-            <h4><a href="https://patrykbart.faculty.wmi.amu.edu.pl/" target="_blank" rel="noopener">Patryk Bartkowiak</a></h4>
-          </div>
-        </article>
-        <article class="person">
-          <div class="avatar">MO</div>
-          <div class="person-body">
-            <h4>Mateusz Ogrodowczyk</h4>
-          </div>
-        </article>
-        <article class="person">
-          <div class="avatar">JS</div>
-          <div class="person-body">
-            <h4>Jakub Szymkowiak</h4>
-          </div>
-        </article>
-      </div>
-
-      <!-- MSC -->
-      <h3 class="subheading">MSc Students</h3>
-      <div class="grid people-grid">
-        <article class="person">
-          <div class="avatar">MM</div>
-          <div class="person-body">
-            <h4>Marcin Marlewski</h4>
-          </div>
-        </article>
-        <article class="person">
-          <div class="avatar">BK</div>
-          <div class="person-body">
-            <h4>Berenika Kostka de Sztemberg</h4>
-          </div>
-        </article>
-        <article class="person">
-          <div class="avatar">JM</div>
-          <div class="person-body">
-            <h4>Jakub Markil</h4>
-          </div>
-        </article>
-        <article class="person">
-          <div class="avatar">KB</div>
-          <div class="person-body">
-            <h4>Kristina Bujanowska</h4>
-          </div>
-        </article>
-        <article class="person">
-          <div class="avatar">MS</div>
-          <div class="person-body">
-            <h4>Mateusz Szlachetka</h4>
-          </div>
-        </article>
-      </div>
-
-      <!-- RESEARCHERS / OTHER -->
-      <h3 class="subheading">Researchers</h3>
-      <div class="grid people-grid">
-        <article class="person">
-          <div class="avatar">AK</div>
-          <div class="person-body">
-            <h4>Aleksandra Krasicka</h4>
-          </div>
-        </article>
-        <article class="person">
-          <div class="avatar">KC</div>
-          <div class="person-body">
-            <h4>Karol Cyganik</h4>
-          </div>
-        </article>
-        <article class="person">
-          <div class="avatar">MD</div>
-          <div class="person-body">
-            <h4>Mateusz Draga</h4>
-          </div>
-        </article>
-      </div>
-
-    </div>
-  </section>
-
-</main>
-
-<div id="site-footer"></div>
-
-<script src="script.js"></script>
-</body>
-</html>
+    {%- if site.data.people.collaborators %}
+    <h2 class="group-title">Frequent collaborators</h2>
+    <ul class="collaborators">
+      {%- for c in site.data.people.collaborators %}
+      <li>{% if c.url %}<a href="{{ c.url }}">{{ c.name }}</a>{% else %}{{ c.name }}{% endif %} <span>{{ c.affiliation }}</span></li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+  </div>
+</section>

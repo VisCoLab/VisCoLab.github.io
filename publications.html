@@ -1,133 +1,23 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Publications — VisCo · Visual Computing Lab</title>
-<meta name="description" content="Selected publications from VisCo — the Visual Computing Lab." />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-
-<div id="site-header"></div>
-
-<main>
-
-  <header class="page-header">
-    <div class="wrap">
-      <p class="eyebrow">Publications</p>
-      <h1>Selected work</h1>
-      <p class="lede">
-        A short list of recent papers. For complete records, see members'
-        personal pages and Google Scholar profiles.
-      </p>
+---
+title: Publications
+heading: Publications
+lede: Papers from the lab and its collaborators, newest first. Lab members are in bold.
+redirect_from:
+  - /projects.html
+---
+{%- assign years = site.data.publications | group_by: "year" | sort: "name" | reverse -%}
+<section class="section">
+  <div class="wrap">
+    <nav class="year-index" aria-label="Years">
+      {%- for y in years %}<a href="#y{{ y.name }}">{{ y.name }}</a>{% endfor -%}
+    </nav>
+    {%- for y in years %}
+    <h2 class="year" id="y{{ y.name }}">{{ y.name }}</h2>
+    <div class="pubs">
+      {%- for p in y.items -%}
+        {% include publication.html pub=p %}
+      {%- endfor -%}
     </div>
-  </header>
-
-  <section class="section">
-    <div class="wrap">
-
-      <h2 class="year-heading">2026</h2>
-      <ul class="pubs">
-        <li class="pub">
-          <p class="pub-venue">ACM Transactions on Graphics · SIGGRAPH 2026</p>
-          <div>
-            <h3><a href="https://jango6324.github.io/woodstock/" target="_blank" rel="noopener">Woodstock: Interactive Modeling of Fungal Wood Decay</a></h3>
-            <p class="pub-authors">Zhanyu Yang, Nikolas A. Schwarz, Bosheng Li, Dominik L. Michels, Bedrich Benes, Sören Pirk, Wojtek Palubicki</p>
-          </div>
-        </li>
-        <li class="pub">
-          <p class="pub-venue">SIGGRAPH Asia 2026 · to appear</p>
-          <div>
-            <h3><a href="https://greenscapes-project.github.io/" target="_blank" rel="noopener">GreenScapes: Optimized Vegetation Configurations in Cities</a></h3>
-            <p class="pub-authors">Patryk Bartkowiak, Marcin Marlewski, Paweł Wójcik, Jae Joong Lee, Dominik L. Michels, Bedrich Benes, Sören Pirk, Wojtek Palubicki</p>
-          </div>
-        </li>
-        <li class="pub">
-          <p class="pub-venue">ECCV 2026 · to appear</p>
-          <div>
-            <h3><a href="https://jna-358.github.io/gaussians_on_fire/" target="_blank" rel="noopener">Gaussians on Fire: High-Frequency Reconstruction of Flames</a></h3>
-            <p class="pub-authors">Jakob Nazarenus, Dominik L. Michels, Wojtek Palubicki, Simin Kou, Fang-Lue Zhang, Sören Pirk, Reinhard Koch</p>
-          </div>
-        </li>
-        <li class="pub">
-          <p class="pub-venue">VISART VIII Workshop at ECCV 2026 · to appear</p>
-          <div>
-            <h3><a href="https://syngallery.github.io/" target="_blank" rel="noopener">SynGallery: A Synthetic Gallery of Real Paintings for Instance-Level Artwork Recognition</a></h3>
-            <p class="pub-authors">Patryk Bartkowiak, Jakub Markil, Bartosz Kotrys, Dominik L. Michels, Sören Pirk, Wojtek Palubicki</p>
-          </div>
-        </li>
-        <li class="pub">
-          <p class="pub-venue">Developmental Cell 2025 · Nature Plants Research Highlight</p>
-          <div>
-            <h3><a href="https://www.sciencedirect.com/science/article/abs/pii/S153458072500663X" target="_blank" rel="noopener">Self-organization of Vascular Strands Drives their Patterning in the Arabidopsis Shoot Apex</a></h3>
-            <p class="pub-authors">Agata Burian, Andrzej Kokosza, Magdalena Raczyńska-Szajgin, Pavel Solansky, Marja Timmermans, Wojtek Pałubicki</p>
-          </div>
-        </li>
-        <li class="pub">
-          <p class="pub-venue">Bildverarbeitung für die Medizin (BVM) 2026</p>
-          <div>
-            <h3><a href="https://link.springer.com/chapter/10.1007/978-3-658-51100-5_80" target="_blank" rel="noopener">Resource-efficient Fine-tuning of Stable Diffusion for Synthetic Hand Radiograph Generation</a></h3>
-            <p class="pub-authors">Moritz J. Finck, Sönke P. Lücke, Niklas C. Koser, Yipeng Sun, Jan B. Hövener, Sören Pirk, Wojtek Palubicki</p>
-          </div>
-        </li>
-      </ul>
-
-      <h2 class="year-heading">2025</h2>
-      <ul class="pubs">
-        <li class="pub">
-          <p class="pub-venue">ACM SIGGRAPH 2025</p>
-          <div>
-            <h3><a href="https://dl.acm.org/doi/10.1145/3721238.3730745" target="_blank" rel="noopener">Stressful Tree Modeling: Breaking Branches with Strands</a></h3>
-            <p class="pub-authors">Bosheng Li, Nikolas A. Schwarz, Wojtek Palubicki, Sören Pirk, Dominik L. Michels, Bedrich Benes</p>
-          </div>
-        </li>
-        <li class="pub">
-          <p class="pub-venue">ACM Transactions on Graphics · SIGGRAPH Asia 2025</p>
-          <div>
-            <h3><a href="https://helgewrede.github.io/firex/" target="_blank" rel="noopener">Fire-X: Extinguishing Fire with Stoichiometric Heat Release</a></h3>
-            <p class="pub-authors">Helge Wrede, Aaron R. Wagner, Sharif M. Mahfuz, Wojtek Pałubicki, Dominik L. Michels, Sören Pirk</p>
-          </div>
-        </li>
-        <li class="pub">
-          <p class="pub-venue">Proceedings of the ACM on CG &amp; Interactive Techniques · SCA 2025</p>
-          <div>
-            <h3><a href="https://dl.acm.org/doi/10.1145/3747855" target="_blank" rel="noopener">FLAMEFORGE: Combustion Simulation of Wooden Structures</a></h3>
-            <p class="pub-authors">Daoming Liu, Jonathan Klein, Florian Rist, Wojtek Palubicki, Sören Pirk, Dominik L. Michels</p>
-          </div>
-        </li>
-        <li class="pub">
-          <p class="pub-venue">IEEE Transactions on Visualization and Computer Graphics</p>
-          <div>
-            <h3><a href="https://ieeexplore.ieee.org/document/11118310" target="_blank" rel="noopener">Thunderstruck: Visually Simulating Electrical Storms</a></h3>
-            <p class="pub-authors">Jorge A. Amador Herrera, Jonathan Klein, Daniel T. Banuti, Sören Pirk, Wojtek Palubicki, Dominik L. Michels</p>
-          </div>
-        </li>
-        <li class="pub">
-          <p class="pub-venue">International Joint Conference on Neural Networks (IJCNN) 2025</p>
-          <div>
-            <h3><a href="https://arxiv.org/abs/2411.18311" target="_blank" rel="noopener">Neural Surface Priors for Editable Gaussian Splatting</a></h3>
-            <p class="pub-authors">Jakub Szymkowiak, Weronika Jakubowska, Dawid Malarz, Weronika Smolak-Dyzewska, Maciej Zięba, Przemysław Musialski, Wojtek Pałubicki, Przemysław Spurek</p>
-          </div>
-        </li>
-      </ul>
-
-      <p class="muted-line">
-        Browse complete lists on the
-        <a href="https://wp.faculty.wmi.amu.edu.pl/" target="_blank" rel="noopener">lab head's page</a>
-        and on individual member sites.
-      </p>
-
-    </div>
-  </section>
-
-</main>
-
-<div id="site-footer"></div>
-
-<script src="script.js"></script>
-</body>
-</html>
+    {%- endfor %}
+  </div>
+</section>
