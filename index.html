@@ -4,8 +4,7 @@
 {%- assign featured = site.data.publications | where: "featured", true -%}
 <section class="hero">
   <div class="wrap">
-    <p class="kicker">{{ site.lab_name }} · {{ site.university.name }}</p>
-    <h1 class="hero-title">We simulate the natural world <br>and teach machines to see it.</h1>
+    <h1 class="sr-only">{{ site.title }}, {{ site.university.name }}</h1>
     <div class="showcase">
       {%- for p in heroes limit: 4 %}
       <figure class="slide">
@@ -18,29 +17,30 @@
 </section>
 
 <section class="section">
-  <div class="wrap split">
-    <div>
-      <h2>About</h2>
-      <p>
-        VISCO is the Visual Computing Lab at the
-        <a href="{{ site.university.faculty_url }}">{{ site.university.faculty }}</a>,
-        {{ site.university.name }}, led by
-        <a href="https://wp.faculty.wmi.amu.edu.pl/">Wojtek Palubicki</a>. Our work
-        spans physically based simulation, generative models, synthetic data, and
-        computer vision — from the architecture of trees to the dynamics of
-        wildfires and storms.
-      </p>
-      <p class="muted">We work alongside collaborators in Saudi Arabia, Germany, and the United States.</p>
-      <p class="more-links">
-        <a href="{{ '/research.html' | relative_url }}">Our research</a>
-        <a href="{{ '/people.html' | relative_url }}">People</a>
-        <a href="{{ '/contact.html' | relative_url }}#openings">Openings</a>
-      </p>
-    </div>
-    <div>
-      <h2>News</h2>
-      {% include news.html limit=3 %}
-    </div>
+  <div class="wrap">
+    <h2 class="block-title">About</h2>
+    <p class="about-text">
+      VISCO is the Visual Computing Lab at the
+      <a href="{{ site.university.faculty_url }}">{{ site.university.faculty }}</a>,
+      {{ site.university.name }}, led by
+      <a href="https://wp.faculty.wmi.amu.edu.pl/">Wojtek Palubicki</a>. Our work
+      spans physically based simulation, generative models, synthetic data, and
+      computer vision — from the architecture of trees to the dynamics of
+      wildfires and storms. We work alongside collaborators in Saudi Arabia,
+      Germany, and the United States.
+    </p>
+    <p class="more-links">
+      <a href="{{ '/research.html' | relative_url }}">Our research</a>
+      <a href="{{ '/people.html' | relative_url }}">People</a>
+      <a href="{{ '/contact.html' | relative_url }}#openings">Openings</a>
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2 class="block-title">News</h2>
+    {% include news.html limit=3 %}
   </div>
 </section>
 
