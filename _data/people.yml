@@ -34,7 +34,7 @@ members:
     group: phd
     photo: bartkowiak.jpg
     url: https://patrykbart.faculty.wmi.amu.edu.pl/
-  - { name: Mateusz Ogrodowczyk, group: phd }
+  - { name: Mateusz Ogrodowczyk, group: phd, photo: ogrodowczyk.jpg }
   - { name: Jakub Szymkowiak, group: phd, photo: szymkowiak.jpg }
 
   - { name: Marcin Marlewski, group: msc, photo: marlewski.jpg }
