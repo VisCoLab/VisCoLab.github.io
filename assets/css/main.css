@@ -134,20 +134,15 @@ ul { margin: 0; padding: 0; }
 .pub-links { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 8px 0 0; font-size: 0.875rem; font-weight: 500; }
 
 /* ---------- people ---------- */
-.group-title { font-size: 1.125rem; padding: 40px 0 10px; margin-bottom: 24px; border-bottom: 1px solid var(--line); }
-.group-title:first-child { padding-top: 0; }
-.people { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 32px 24px; }
-.person { display: flex; flex-direction: column; }
-.person-photo { display: block; aspect-ratio: 1 / 1; overflow: hidden; border-radius: var(--radius); background: #eef1f5; margin-bottom: 12px; }
-.person-photo img { width: 100%; height: 100%; object-fit: cover; }
-.person-photo svg { width: 100%; height: 100%; fill: #cdd5df; }
-.person-name { font-size: 0.9375rem; font-weight: 600; line-height: 1.35; }
-.person-name a { color: var(--ink); }
-.person-name a:hover { color: var(--link); }
-.person-note { font-size: 0.8125rem; color: var(--ink-3); }
-.collaborators { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 8px 24px; font-size: 0.9375rem; }
-.collaborators span { color: var(--ink-3); }
-.collaborators span::before { content: "· "; }
+.lead { display: flex; align-items: center; gap: 28px; padding-bottom: 8px; }
+.lead-photo { width: 144px; height: 144px; object-fit: cover; border-radius: var(--radius); background: var(--bg-soft); }
+.lead-name { margin: 0; font-size: 1.375rem; font-weight: 600; letter-spacing: -0.02em; }
+.lead-role { margin: 2px 0 10px; color: var(--ink-3); }
+.lead-link { margin: 0; font-size: 0.9375rem; font-weight: 500; }
+.group-title { font-size: 1.125rem; padding: 40px 0 10px; margin-bottom: 16px; border-bottom: 1px solid var(--line); }
+.names { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px 24px; font-size: 1rem; }
+.names a { color: var(--ink); }
+.names a:hover { color: var(--link); }
 
 /* ---------- research ---------- */
 .theme { display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 44px; padding: 44px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 72px; }
@@ -168,6 +163,7 @@ ul { margin: 0; padding: 0; }
 .contact-grid h2 { margin-bottom: 8px; }
 .contact-grid p { color: var(--ink-2); margin-bottom: 28px; }
 #openings { scroll-margin-top: 72px; }
+.map { display: block; width: 100%; height: 420px; border: 1px solid var(--line); border-radius: var(--radius); margin-bottom: 48px; background: var(--bg-soft); }
 
 /* ---------- footer ---------- */
 .site-footer { border-top: 1px solid var(--line); color: var(--ink-3); font-size: 0.875rem; }
@@ -196,7 +192,8 @@ ul { margin: 0; padding: 0; }
   .cards { grid-template-columns: 1fr; }
   .pub { grid-template-columns: 112px minmax(0, 1fr); gap: 16px; }
   .supporter-logos { gap: 24px 48px; }
+  .map { height: 300px; }
   .supporter-logos img { height: calc(var(--h) * 0.7); }
-  .people { grid-template-columns: repeat(auto-fill, minmax(128px, 1fr)); gap: 24px 16px; }
+  .lead-photo { width: 112px; height: 112px; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
 }

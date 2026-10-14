@@ -3,7 +3,13 @@ title: Contact
 heading: Contact
 lede: We are happy to hear from collaborators, prospective students, and the press.
 ---
-<section class="section">
+<section class="section section-last">
+  <div class="wrap">
+    <iframe class="map"
+      src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1s{{ site.location.maps_query | url_encode }}!6i16"
+      title="Map: {{ site.location.building }}, {{ site.location.street }}, {{ site.location.city }}"
+      referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+  </div>
   <div class="wrap contact-grid">
     <div>
       <h2>Address</h2>
@@ -11,8 +17,9 @@ lede: We are happy to hear from collaborators, prospective students, and the pre
         VISCO · Visual Computing Lab<br>
         {{ site.university.faculty }}<br>
         {{ site.university.name }}<br>
-        ul. Uniwersytetu Poznańskiego 4<br>
-        61-614 Poznań, Poland
+        {{ site.location.building }}<br>
+        {{ site.location.street }}<br>
+        {{ site.location.city }}
       </p>
     </div>
     <div>

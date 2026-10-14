@@ -26,10 +26,10 @@ icon) or locally; every page renders from them, so formatting stays consistent.
 to `images/projects/` (at least 800 px wide) and point `image` at it. Lab members
 are bolded automatically, using the names and `aliases` in `_data/people.yml`.
 
-**Add a person.** Add an entry under `members` in `_data/people.yml` with `name`
-and `group`. For a photo, put a square image of at least 400 x 400 px in
-`images/people/` and set `photo` to its file name. When someone leaves, move
-them to the `alumni` group rather than deleting them.
+**Add a person.** Add an entry under `members` in `_data/people.yml` with `name`,
+`group` and, optionally, `url`. The People page lists names only; the one photo
+is the lab head's (`images/people/`, square, at least 400 x 400 px). When
+someone leaves, move them to the `alumni` group rather than deleting them.
 
 **Add news.** Add an item to `_data/news.yml` with a `date` and a one-sentence
 Markdown `text`. The home page shows the six most recent.
@@ -49,11 +49,11 @@ and `erb` are needed on Ruby 3.4.
 ```
 _config.yml        site name, university, navigation
 _data/             all content (see above)
-_includes/         publication.html, person.html, news.html, header, footer
+_includes/         publication.html, news.html, mark.svg, header, footer
 _layouts/          default.html, the one page layout
 assets/css/        main.css, the one stylesheet
 images/projects/   16:9 teasers
-images/people/     square portraits
+images/people/     the lab head's portrait
 ```
 
 `projects.html` and `videos.html` are redirects kept for old links.

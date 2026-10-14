@@ -3,27 +3,32 @@ title: People
 heading: People
 lede: Researchers and students working at the intersection of graphics, simulation, and machine learning.
 ---
-<section class="section">
+<section class="section section-last">
   <div class="wrap">
     {%- for g in site.data.people.groups -%}
       {%- assign members = site.data.people.members | where: "group", g.id -%}
-      {%- if members.size > 0 %}
+      {%- if members.size == 0 %}{% continue %}{% endif -%}
+      {%- if g.layout == "feature" %}
+      {%- for m in members %}
+    <div class="lead">
+      {%- if m.photo %}
+      <img class="lead-photo" src="{{ '/images/people/' | append: m.photo | relative_url }}" alt="{{ m.name }}" width="160" height="160">
+      {%- endif %}
+      <div>
+        <p class="lead-name">{{ m.name }}</p>
+        <p class="lead-role">{{ g.title }}</p>
+        {%- if m.url %}<p class="lead-link"><a href="{{ m.url }}">Personal page</a></p>{% endif %}
+      </div>
+    </div>
+      {%- endfor %}
+      {%- else %}
     <h2 class="group-title">{{ g.title }}</h2>
-    <ul class="people">
-      {%- for m in members -%}
-        {% include person.html person=m %}
-      {%- endfor -%}
+    <ul class="names">
+      {%- for m in members %}
+      <li>{% if m.url %}<a href="{{ m.url }}">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}</li>
+      {%- endfor %}
     </ul>
       {%- endif -%}
     {%- endfor %}
-
-    {%- if site.data.people.collaborators %}
-    <h2 class="group-title">Frequent collaborators</h2>
-    <ul class="collaborators">
-      {%- for c in site.data.people.collaborators %}
-      <li>{% if c.url %}<a href="{{ c.url }}">{{ c.name }}</a>{% else %}{{ c.name }}{% endif %} <span>{{ c.affiliation }}</span></li>
-      {%- endfor %}
-    </ul>
-    {%- endif %}
   </div>
 </section>
