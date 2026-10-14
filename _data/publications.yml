@@ -12,6 +12,8 @@
 #   status      optional: "to appear" until the paper is out
 #   year        publication year
 #   image       16:9 teaser in images/projects/, at least 800 px wide (optional)
+#   clip        optional 6 s muted loop, videos/<id>.mp4 (640 x 360 H.264) with a
+#               poster frame videos/<id>.jpg; replaces `image` on Publications
 #   highlight   optional one-line award or highlight; highlight_url links it
 #   featured    true to show it as a card on the home page (the first three)
 #   hero        true to rotate its image at the top of the home page (four at most;
@@ -40,6 +42,7 @@
   status: to appear
   year: 2026
   image: /images/projects/greenscapes.jpg
+  clip: /videos/greenscapes.mp4
   hero: true
   featured: true
   themes: [natural]
@@ -68,6 +71,7 @@
   venue: ECCV 2026
   year: 2026
   image: /images/projects/gaussians_on_fire.jpg
+  clip: /videos/gaussians-on-fire.mp4
   featured: true
   themes: [vision, natural]
   links:
@@ -151,6 +155,7 @@
   venue: SCA 2025
   venue_full: Proceedings of the ACM on Computer Graphics and Interactive Techniques
   year: 2025
+  image: /images/projects/flameforge.jpg
   themes: [natural, formal]
   links:
     paper: https://doi.org/10.1145/3747855
@@ -163,6 +168,7 @@
   venue: IEEE TVCG 2025
   venue_full: IEEE Transactions on Visualization and Computer Graphics
   year: 2025
+  image: /images/projects/thunderstruck.jpg
   themes: [natural]
   links:
     paper: https://doi.org/10.1109/TVCG.2025.3596334
@@ -173,6 +179,7 @@
   authors: [Jakub Szymkowiak, Weronika Jakubowska, Dawid Malarz, Weronika Smolak-Dyżewska, Maciej Zięba, Wojtek Palubicki, Przemyslaw Musialski, Przemysław Spurek]
   venue: IJCNN 2025
   year: 2025
+  image: /images/projects/neural-surface-priors.jpg
   themes: [vision]
   links:
     paper: https://doi.org/10.1109/IJCNN64981.2025.11229121
@@ -186,6 +193,7 @@
   venue_full: ACM Transactions on Graphics
   year: 2024
   image: /images/projects/scintilla.jpg
+  clip: /videos/scintilla.mp4
   hero: true
   featured: true
   themes: [natural]

@@ -7,7 +7,9 @@ Lab members (people.yml `name` and `aliases`) are set in bold automatically.
 {%- assign primary = pub.links.project | default: pub.links.paper | default: pub.links.arxiv -%}
 <article class="pub" id="{{ pub.id }}">
   {%- if primary %}<a class="pub-thumb" href="{{ primary }}" tabindex="-1" aria-hidden="true">{% else %}<span class="pub-thumb">{% endif -%}
-    {%- if pub.image -%}
+    {%- if pub.clip -%}
+      {% include clip.html src=pub.clip %}
+    {%- elsif pub.image -%}
       <img src="{{ pub.image | relative_url }}" alt="" loading="lazy" width="320" height="180">
     {%- else -%}
       <span class="pub-thumb-empty">{% include mark.svg %}</span>

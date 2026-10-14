@@ -11,7 +11,11 @@ lede: Four research themes, woven together by physically grounded modeling and l
     {%- for t in site.data.themes %}
     {%- assign related = site.data.publications | where_exp: "p", "p.themes contains t.id" %}
     <article class="theme" id="{{ t.id }}">
+      {%- if t.clip %}
+      {% include clip.html src=t.clip class="theme-image" %}
+      {%- else %}
       <img class="theme-image" src="{{ t.image | relative_url }}" alt="" loading="lazy" width="480" height="270">
+      {%- endif %}
       <div class="theme-body">
         <h2>{{ t.title }}</h2>
         <p>{{ t.summary }}</p>

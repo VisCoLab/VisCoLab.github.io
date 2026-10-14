@@ -1,9 +1,11 @@
 # Research themes on research.html. A publication joins a theme by listing the
-# theme's id under `themes:` in publications.yml.
+# theme's id under `themes:` in publications.yml. `clip` (optional) is a 6 s muted
+# loop shown instead of `image`, as in publications.yml.
 
 - id: vision
   title: Computer Vision
   image: /images/projects/gaussians_on_fire.jpg
+  clip: /videos/gaussians-on-fire.mp4
   summary: >-
     We work at the intersection of geometry, perception, and learning,
     designing models that reconstruct the world from images and generate it
@@ -30,6 +32,7 @@
 - id: natural
   title: Natural Phenomena Modeling
   image: /images/projects/scintilla.jpg
+  clip: /videos/scintilla.mp4
   summary: >-
     The lab's most visible thread. We design simulators for the structure and
     behavior of the natural world, both as scientific tools and as
