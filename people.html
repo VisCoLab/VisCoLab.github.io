@@ -12,14 +12,14 @@ lede: Researchers and students working at the intersection of graphics, simulati
       {%- for m in members %}
     <div class="lead">
       {%- if m.photo %}
-      {% if m.url %}<a class="lead-photo-link" href="{{ m.url }}" tabindex="-1" aria-hidden="true">{% endif -%}
+      {% if m.url %}<a class="lead-photo-link" href="{{ m.url }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">{% endif -%}
       <img class="lead-photo" src="{{ '/images/people/' | append: m.photo | relative_url }}" alt="{{ m.name }}" width="160" height="160">
       {%- if m.url %}</a>{% endif %}
       {%- endif %}
       <div>
-        <p class="lead-name">{% if m.url %}<a href="{{ m.url }}">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}</p>
+        <p class="lead-name">{% if m.url %}<a href="{{ m.url }}" target="_blank" rel="noopener">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}</p>
         <p class="lead-role">{{ g.title }}</p>
-        {%- if m.url %}<p class="lead-link"><a href="{{ m.url }}">Personal page</a></p>{% endif %}
+        {%- if m.url %}<p class="lead-link"><a href="{{ m.url }}" target="_blank" rel="noopener">Personal page</a></p>{% endif %}
       </div>
     </div>
       {%- endfor %}
@@ -28,14 +28,14 @@ lede: Researchers and students working at the intersection of graphics, simulati
     <ul class="people">
       {%- for m in members %}
       <li class="person">
-        {% if m.url %}<a class="person-photo" href="{{ m.url }}" tabindex="-1" aria-hidden="true">{% else %}<span class="person-photo">{% endif -%}
+        {% if m.url %}<a class="person-photo" href="{{ m.url }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">{% else %}<span class="person-photo">{% endif -%}
           {%- if m.photo -%}
           <img src="{{ '/images/people/' | append: m.photo | relative_url }}" alt="{{ m.name }}" loading="lazy" width="400" height="400">
           {%- else -%}
           <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="32" cy="25" r="11"/><path d="M12 58c1.5-11 9.5-18 20-18s18.5 7 20 18z"/></svg>
           {%- endif -%}
         {%- if m.url %}</a>{% else %}</span>{% endif %}
-        <span class="person-name">{% if m.url %}<a href="{{ m.url }}">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}</span>
+        <span class="person-name">{% if m.url %}<a href="{{ m.url }}" target="_blank" rel="noopener">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}</span>
       </li>
       {%- endfor %}
     </ul>
