@@ -8,7 +8,7 @@ other build step. **A push to `main` is a live deploy.**
 
 ## Editing content
 
-All content lives in four YAML files. Edit them directly on GitHub (the pencil
+All content lives in five YAML files. Edit them directly on GitHub (the pencil
 icon) or locally; every page renders from them, so formatting stays consistent.
 
 | To change | Edit |
@@ -17,6 +17,7 @@ icon) or locally; every page renders from them, so formatting stays consistent.
 | a person | `_data/people.yml` |
 | a news item | `_data/news.yml` |
 | a research theme | `_data/themes.yml` |
+| a supporter (home page footer) | `_data/supporters.yml` |
 
 **Add a paper.** Copy an existing entry in `_data/publications.yml` and fill in
 `title`, `authors` (official list, in order), `venue` (short, e.g.

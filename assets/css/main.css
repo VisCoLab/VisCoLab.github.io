@@ -102,6 +102,13 @@ ul { margin: 0; padding: 0; }
 .card-sub { font-size: 0.9375rem; color: var(--ink-2); line-height: 1.45; margin-top: 2px; }
 .card-venue { font-size: 0.8125rem; color: var(--ink-3); margin-top: 6px; }
 
+.supporters { border-top: 1px solid var(--line); padding-top: 40px; }
+.supporters .label { margin-bottom: 20px; }
+.supporter-logos { display: flex; flex-wrap: wrap; align-items: center; gap: 24px 56px; margin-bottom: 20px; }
+.supporter-logos img { width: auto; max-width: 100%; }
+.supporter-logos a:hover { opacity: 0.8; }
+.supporters p { margin: 0; max-width: 46rem; font-size: 0.875rem; color: var(--ink-3); }
+
 /* ---------- news ---------- */
 .news { list-style: none; }
 .news li { display: grid; grid-template-columns: 96px 1fr; gap: 16px; padding: 12px 0; font-size: 0.9375rem; line-height: 1.5; border-top: 1px solid var(--line); }

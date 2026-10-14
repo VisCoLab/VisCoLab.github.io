@@ -44,7 +44,7 @@
   </div>
 </section>
 
-<section class="section section-last">
+<section class="section">
   <div class="wrap">
     <div class="section-head">
       <h2>Selected work</h2>
@@ -61,6 +61,20 @@
         <span class="card-venue">{{ p.venue }}</span>
       </a>
       {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+<section class="section section-last">
+  <div class="wrap">
+    <div class="supporters">
+      <h2 class="label">Supported by</h2>
+      <div class="supporter-logos">
+        {%- for s in site.data.supporters.logos %}
+        <a href="{{ s.url }}"><img src="{{ s.logo | relative_url }}" alt="{{ s.name }}" style="height: {{ s.height }}px" loading="lazy"></a>
+        {%- endfor %}
+      </div>
+      <p>{{ site.data.supporters.statement }}</p>
     </div>
   </div>
 </section>
