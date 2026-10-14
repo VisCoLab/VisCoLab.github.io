@@ -23,9 +23,18 @@ lede: Researchers and students working at the intersection of graphics, simulati
       {%- endfor %}
       {%- else %}
     <h2 class="group-title">{{ g.title }}</h2>
-    <ul class="names">
+    <ul class="people">
       {%- for m in members %}
-      <li>{% if m.url %}<a href="{{ m.url }}">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}</li>
+      <li class="person">
+        <span class="person-photo">
+          {%- if m.photo -%}
+          <img src="{{ '/images/people/' | append: m.photo | relative_url }}" alt="{{ m.name }}" loading="lazy" width="400" height="400">
+          {%- else -%}
+          <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="32" cy="25" r="11"/><path d="M12 58c1.5-11 9.5-18 20-18s18.5 7 20 18z"/></svg>
+          {%- endif -%}
+        </span>
+        <span class="person-name">{% if m.url %}<a href="{{ m.url }}">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}</span>
+      </li>
       {%- endfor %}
     </ul>
       {%- endif -%}

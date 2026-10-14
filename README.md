@@ -27,9 +27,10 @@ to `images/projects/` (at least 800 px wide) and point `image` at it. Lab member
 are bolded automatically, using the names and `aliases` in `_data/people.yml`.
 
 **Add a person.** Add an entry under `members` in `_data/people.yml` with `name`,
-`group` and, optionally, `url`. The People page lists names only; the one photo
-is the lab head's (`images/people/`, square, at least 400 x 400 px). When
-someone leaves, move them to the `alumni` group rather than deleting them.
+`group` and, optionally, `url` and `photo`. A photo is a square head-and-shoulders
+crop, 400 x 400 px JPEG, in `images/people/`; without one the page shows a
+neutral silhouette. When someone leaves, move them to the `alumni` group rather
+than deleting them.
 
 **Add news.** Add an item to `_data/news.yml` with a `date` and a one-sentence
 Markdown `text`. The home page shows the six most recent.
@@ -53,7 +54,7 @@ _includes/         publication.html, news.html, mark.svg, header, footer
 _layouts/          default.html, the one page layout
 assets/css/        main.css, the one stylesheet
 images/projects/   16:9 teasers
-images/people/     the lab head's portrait
+images/people/     square portraits, 400 x 400
 ```
 
 `projects.html` and `videos.html` are redirects kept for old links.
