@@ -1,6 +1,6 @@
 # viscolab.github.io
 
-Website of VisCo — the Visual Computing Lab at the Faculty of Mathematics and
+Website of VISCO — the Visual Computing Lab at the Faculty of Mathematics and
 Computer Science, Adam Mickiewicz University in Poznań: <https://viscolab.github.io>.
 
 GitHub Pages builds the site with Jekyll on every push to `main`; there is no

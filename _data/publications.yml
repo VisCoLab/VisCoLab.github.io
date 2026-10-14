@@ -13,7 +13,9 @@
 #   year        publication year
 #   image       16:9 teaser in images/projects/, at least 800 px wide (optional)
 #   highlight   optional one-line award or highlight; highlight_url links it
-#   featured    true to show it as a card on the home page (six at most)
+#   featured    true to show it as a card on the home page (the first three)
+#   hero        true to rotate its image at the top of the home page (four at most;
+#               wide renders at least 1400 px across)
 #   themes      research.html themes: vision, synthetic, natural, formal
 #   links       any of project, paper (DOI), arxiv, code, data, video
 
@@ -38,6 +40,7 @@
   status: to appear
   year: 2026
   image: /images/projects/greenscapes.jpg
+  hero: true
   featured: true
   themes: [natural]
   links:
@@ -82,6 +85,7 @@
   venue_full: VISART VIII
   year: 2026
   image: /images/projects/syngallery.jpg
+  hero: true
   featured: true
   themes: [synthetic, vision]
   links:
@@ -120,6 +124,7 @@
   venue_full: ACM Transactions on Graphics
   year: 2025
   image: /images/projects/firex.jpg
+  hero: true
   featured: true
   themes: [natural, formal]
   links:
@@ -181,6 +186,7 @@
   venue_full: ACM Transactions on Graphics
   year: 2024
   image: /images/projects/scintilla.jpg
+  hero: true
   featured: true
   themes: [natural]
   links:
