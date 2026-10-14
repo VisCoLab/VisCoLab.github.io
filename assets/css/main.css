@@ -140,7 +140,8 @@ ul { margin: 0; padding: 0; }
 .lead-role { margin: 2px 0 10px; color: var(--ink-3); }
 .lead-link { margin: 0; font-size: 0.9375rem; font-weight: 500; }
 .group-title { font-size: 1.125rem; padding: 40px 0 10px; margin-bottom: 16px; border-bottom: 1px solid var(--line); }
-.names { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px 24px; font-size: 1rem; }
+.names { list-style: none; font-size: 1rem; }
+.names li { padding: 5px 0; }
 .names a { color: var(--ink); }
 .names a:hover { color: var(--link); }
 

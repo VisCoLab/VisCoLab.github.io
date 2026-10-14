@@ -22,13 +22,15 @@ university:
 
 youtube: https://www.youtube.com/@VCAMULab
 
-# The faculty building: the address on contact.html and the query for its
-# Google Maps embed (the place Google lists at that address).
+# The faculty building: the address on contact.html and the pin of its Google
+# Maps embed. A pin by coordinates carries no place card over the map, which a
+# pin by place name does. Coordinates from OpenStreetMap, 2026-10-14.
 location:
   building: Collegium Mathematicum
   street: ul. Uniwersytetu Poznańskiego 4
   city: 61-614 Poznań, Poland
-  maps_query: Wydział Matematyki i Informatyki UAM, Uniwersytetu Poznańskiego 4, 61-614 Poznań
+  lat: 52.46680
+  lon: 16.92735
 
 nav:
   - { title: Research, url: /research.html }
