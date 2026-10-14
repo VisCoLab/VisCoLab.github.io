@@ -4,7 +4,7 @@
   {%- for n in items limit: include.limit -%}
   <li>
     <time datetime="{{ n.date | date: '%Y-%m' }}">{{ n.date | date: "%b %Y" }}</time>
-    <span>{{ n.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span>
+    <span>{{ n.text | markdownify | remove: "<p>" | remove: "</p>" | strip | replace: '<a href="http', '<a target="_blank" rel="noopener" href="http' }}</span>
   </li>
   {%- endfor -%}
 </ul>

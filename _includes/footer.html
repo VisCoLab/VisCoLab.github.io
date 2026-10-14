@@ -2,11 +2,11 @@
   <div class="wrap footer-inner">
     <p>
       © {{ site.time | date: "%Y" }} {{ site.title }} ·
-      <a href="{{ site.university.faculty_url }}">{{ site.university.faculty }}</a> ·
-      <a href="{{ site.university.url }}">{{ site.university.name }}</a>
+      <a href="{{ site.university.faculty_url }}" target="_blank" rel="noopener">{{ site.university.faculty }}</a> ·
+      <a href="{{ site.university.url }}" target="_blank" rel="noopener">{{ site.university.name }}</a>
     </p>
     <p class="footer-links">
-      <a href="{{ site.youtube }}">YouTube</a>
+      <a href="{{ site.youtube }}" target="_blank" rel="noopener">YouTube</a>
       <a href="{{ '/contact.html' | relative_url }}">Contact</a>
     </p>
   </div>
