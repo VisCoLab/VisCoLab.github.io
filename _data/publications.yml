@@ -9,7 +9,7 @@
 #               bolded automatically (see _data/people.yml)
 #   venue       short label, e.g. "SIGGRAPH 2026", "ECCV 2026", "NeurIPS 2026"
 #   venue_full  optional: journal or track, e.g. "ACM Transactions on Graphics"
-#   status      optional: "to appear" until the paper is out
+#   status      optional label after the venue; leave it out for accepted papers (venue alone, no "to appear")
 #   year        publication year
 #   image       16:9 teaser in images/projects/, at least 800 px wide (optional)
 #   clip        optional 6 s muted loop, videos/<id>.mp4 (640 x 360 H.264) with a
@@ -39,7 +39,6 @@
   authors: [Patryk Bartkowiak, Marcin Marlewski, Paweł Wójcik, Jae Joong Lee, Dominik L. Michels, Bedrich Benes, Sören Pirk, Wojtek Palubicki]
   venue: SIGGRAPH Asia 2026
   venue_full: Conference Papers
-  status: to appear
   year: 2026
   image: /images/projects/greenscapes.jpg
   clip: /videos/greenscapes.mp4
@@ -56,7 +55,6 @@
   authors: [Patryk Bartkowiak, Lennart Petersen, Bartosz Kotrys, Dominik L. Michels, Sören Pirk, Wojtek Palubicki]
   venue: NeurIPS 2026
   venue_full: Evaluations & Datasets Track
-  status: to appear
   year: 2026
   image: /images/projects/masc.jpg
   themes: [vision]
