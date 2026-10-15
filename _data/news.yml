@@ -2,6 +2,9 @@
 # paper to its project page (its DOI if it has none), not to publications.html.
 # The home page shows the most recent items.
 
+- date: 2026-10-15
+  text: "[Auditing Metrics for Synthetic Data Utility](https://sadge-metric.github.io/) accepted to WACV 2027."
+
 - date: 2026-09-24
   text: "[MaSC](https://masc-metric.github.io/) accepted to NeurIPS 2026 (Evaluations & Datasets Track)."
 

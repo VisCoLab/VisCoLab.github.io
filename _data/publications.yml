@@ -18,6 +18,18 @@
 #   themes      research.html themes: vision, synthetic, natural, formal
 #   links       any of project, paper (DOI), arxiv, code, data, video
 
+- id: sadge
+  title: "Auditing Metrics for Synthetic Data Utility: A Cross-Domain Study of Appearance and Geometry"
+  authors: [Patryk Bartkowiak, Dominik L. Michels, Sören Pirk, Wojtek Palubicki]
+  venue: WACV 2027
+  year: 2027
+  image: /images/projects/sadge.jpg
+  themes: [synthetic, vision]
+  links:
+    project: https://sadge-metric.github.io/
+    arxiv: https://arxiv.org/abs/2605.22467
+    code: https://github.com/SADGE-metric/sadge-reproduction
+
 - id: woodstock
   title: "Woodstock: Interactive Modeling of Fungal Wood Decay"
   authors: [Zhanyu Yang, Nikolas A. Schwarz, Bosheng Li, Dominik L. Michels, Bedrich Benes, Sören Pirk, Wojtek Palubicki]
