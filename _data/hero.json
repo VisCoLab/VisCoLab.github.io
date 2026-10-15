@@ -1,5 +1,5 @@
 {
-  "about": "The home page reel. videos/hero.mp4 plays these scenes in order, scene_seconds each, crossfading over fade_seconds, and loops seamlessly; each scene's caption links its paper. Rebuild the video with web-pages/scripts/make-hero-reel.py after editing. source is a video URL or a local file, start is in seconds of the source, speed plays it faster than recorded, and filter is an ffmpeg filtergraph from [0:v] to [v] that cuts the scene to 2:1.",
+  "about": "The home page reel. videos/hero.mp4 plays these scenes in order, scene_seconds each, crossfading over fade_seconds, and loops seamlessly; each scene's caption links its paper. Rebuild the video with web-pages/scripts/make-hero-reel.py after editing. source is a video URL (YouTube through yt-dlp, only with Patryk's OK) or a local file, start is in seconds of the source, speed plays it faster than recorded, and filter is an ffmpeg filtergraph from [0:v] to [v] that cuts the scene to 2:1.",
   "video": "/videos/hero.mp4",
   "poster": "/videos/hero.jpg",
   "width": 1600,
@@ -15,6 +15,14 @@
       "start": 310,
       "speed": 15,
       "filter": "[0:v]crop=2304:1152:128:368[v]"
+    },
+    {
+      "pub": "flamescapes",
+      "source": "https://youtu.be/8CDSVlS_XVc",
+      "note": "The paper's own video on YouTube (1920x1080, 30 fps); the page hosts no file. Cut with Patryk's OK, 2026-10-15. From 3:00 the static wide shot of the town burning, its plume growing; a fade to black starts near 3:18.",
+      "start": 180,
+      "speed": 2,
+      "filter": "[0:v]crop=1920:960:0:60[v]"
     },
     {
       "pub": "scintilla",

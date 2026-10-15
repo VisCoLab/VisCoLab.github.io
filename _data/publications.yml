@@ -57,6 +57,18 @@
     code: https://github.com/greenscapes-project/greenscapes
     video: https://www.youtube.com/watch?v=93ximIbff4M
 
+- id: flamescapes
+  title: "Flamescapes: Simulating the Wildlandfire Urban Interface"
+  authors: [Helge Wrede, Anton R. Wagner, Wojtek Pałubicki, Dominik L. Michels, Sören Pirk]
+  venue: SIGGRAPH Asia 2026
+  venue_full: ACM Transactions on Graphics
+  year: 2026
+  image: /images/projects/flamescapes.jpg
+  themes: [natural]
+  links:
+    project: https://helgewrede.github.io/flamescapes/
+    video: https://youtu.be/8CDSVlS_XVc
+
 - id: masc
   title: "MaSC: A Masked Similarity Metric for Evaluating Concept-Driven Generation"
   authors: [Patryk Bartkowiak, Lennart Petersen, Bartosz Kotrys, Dominik L. Michels, Sören Pirk, Wojtek Palubicki]
