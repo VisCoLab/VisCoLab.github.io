@@ -119,6 +119,7 @@
   venue: BVM 2026
   venue_full: Bildverarbeitung für die Medizin
   year: 2026
+  image: /images/projects/hand-radiographs.jpg
   themes: [synthetic]
   links:
     paper: https://doi.org/10.1007/978-3-658-51100-5_80
