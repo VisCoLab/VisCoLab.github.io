@@ -1,7 +1,0 @@
-{%- comment -%}
-A muted looping clip with its poster frame. Parameters: src (the .mp4; its
-poster is the .jpg of the same name) and an optional class.
-It plays only while on screen (assets/js/clips.js) and never for visitors who
-ask for reduced motion; without JavaScript the poster stays.
-{%- endcomment -%}
-<video class="clip{% if include.class %} {{ include.class }}{% endif %}" src="{{ include.src | relative_url }}" poster="{{ include.src | replace: '.mp4', '.jpg' | relative_url }}" muted loop playsinline preload="none" aria-hidden="true"></video>

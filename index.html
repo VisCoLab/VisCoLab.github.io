@@ -1,16 +1,17 @@
 ---
 ---
-{%- assign heroes = site.data.publications | where: "hero", true -%}
 {%- assign featured = site.data.publications | where: "featured", true -%}
+{%- assign reel = site.data.hero -%}
 <section class="hero">
   <div class="wrap">
     <h1 class="sr-only">{{ site.title }}, {{ site.university.name }}</h1>
     <div class="showcase">
-      {%- for p in heroes limit: 4 %}
-      <figure class="slide">
-        <img src="{{ p.image | relative_url }}" alt="{{ p.title }}"{% if forloop.first %} fetchpriority="high"{% else %} loading="lazy"{% endif %} width="1400" height="600">
-        <figcaption><a href="{{ '/publications.html' | relative_url }}#{{ p.id }}">{{ p.title | split: ": " | first }}</a> · {{ p.venue }}</figcaption>
-      </figure>
+      <video class="reel" src="{{ reel.video | relative_url }}" poster="{{ reel.poster | relative_url }}"
+        data-scene="{{ reel.scene_seconds }}" data-fade="{{ reel.fade_seconds }}"
+        muted loop playsinline preload="auto" aria-hidden="true"></video>
+      {%- for s in reel.scenes %}
+      {%- assign p = site.data.publications | where: "id", s.pub | first %}
+      <p class="reel-caption{% if forloop.first %} is-active{% endif %}"><a href="{{ '/publications.html' | relative_url }}#{{ p.id }}">{{ p.title | split: ": " | first }}</a> · {{ p.venue }}</p>
       {%- endfor %}
     </div>
   </div>

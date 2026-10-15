@@ -12,12 +12,9 @@
 #   status      optional label after the venue; leave it out for accepted papers (venue alone, no "to appear")
 #   year        publication year
 #   image       16:9 teaser in images/projects/, at least 800 px wide (optional)
-#   clip        optional 6 s muted loop, videos/<id>.mp4 (640 x 360 H.264) with a
-#               poster frame videos/<id>.jpg; replaces `image` on Publications
 #   highlight   optional one-line award or highlight; highlight_url links it
-#   featured    true to show it as a card on the home page (the first three)
-#   hero        true to rotate its image at the top of the home page (four at most;
-#               wide renders at least 1400 px across)
+#   featured    true to show it as a card on the home page (the first three);
+#               the reel at the top of the home page is set in _data/hero.json
 #   themes      research.html themes: vision, synthetic, natural, formal
 #   links       any of project, paper (DOI), arxiv, code, data, video
 
@@ -41,8 +38,6 @@
   venue_full: Conference Papers
   year: 2026
   image: /images/projects/greenscapes.jpg
-  clip: /videos/greenscapes.mp4
-  hero: true
   featured: true
   themes: [natural]
   links:
@@ -69,7 +64,6 @@
   venue: ECCV 2026
   year: 2026
   image: /images/projects/gaussians_on_fire.jpg
-  clip: /videos/gaussians-on-fire.mp4
   featured: true
   themes: [vision, natural]
   links:
@@ -87,7 +81,6 @@
   venue_full: VISART VIII
   year: 2026
   image: /images/projects/syngallery.jpg
-  hero: true
   featured: true
   themes: [synthetic, vision]
   links:
@@ -126,7 +119,6 @@
   venue_full: ACM Transactions on Graphics
   year: 2025
   image: /images/projects/firex.jpg
-  hero: true
   featured: true
   themes: [natural, formal]
   links:
@@ -191,8 +183,6 @@
   venue_full: ACM Transactions on Graphics
   year: 2024
   image: /images/projects/scintilla.jpg
-  clip: /videos/scintilla.mp4
-  hero: true
   featured: true
   themes: [natural]
   links:
